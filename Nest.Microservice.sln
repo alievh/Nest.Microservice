@@ -18,6 +18,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Shared", "Shared\Nest.Shared\Nest.Shared.csproj", "{07699EA2-7D48-4FF2-861E-99023313C1B5}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{BC443029-DEA4-498A-B119-A5A25A79A85D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.IdentityServer", "IdentitServer\Nest.IdentityServer\Nest.IdentityServer.csproj", "{944A1B73-EE30-46E0-A06A-1139D12A5530}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +36,10 @@ Global
 		{07699EA2-7D48-4FF2-861E-99023313C1B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07699EA2-7D48-4FF2-861E-99023313C1B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07699EA2-7D48-4FF2-861E-99023313C1B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{944A1B73-EE30-46E0-A06A-1139D12A5530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{944A1B73-EE30-46E0-A06A-1139D12A5530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{944A1B73-EE30-46E0-A06A-1139D12A5530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{944A1B73-EE30-46E0-A06A-1139D12A5530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -40,6 +48,7 @@ Global
 		{22B88020-2218-41CE-9CDB-E32BE1EF21B4} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
 		{EAB31A0F-98A0-4584-A36A-F16E2C8C0159} = {22B88020-2218-41CE-9CDB-E32BE1EF21B4}
 		{07699EA2-7D48-4FF2-861E-99023313C1B5} = {BDA74583-5D61-4D01-8DCB-EA9A16536723}
+		{944A1B73-EE30-46E0-A06A-1139D12A5530} = {BC443029-DEA4-498A-B119-A5A25A79A85D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38F6871C-8B1E-4B69-B9C7-8991C4F3DBAD}
