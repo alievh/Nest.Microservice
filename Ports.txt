@@ -1,6 +1,7 @@
 Services:
 	- Nest.Services.CatalogApi => http://localhost:5011
 	- Nest.Services.PictureStockApi => http://localhost:5012
+	- Nest.Services.BasketApi => http://localhost:5013
 
 IdentityServer:
 	- Nest.IdentityServer => http://localhost:5001
