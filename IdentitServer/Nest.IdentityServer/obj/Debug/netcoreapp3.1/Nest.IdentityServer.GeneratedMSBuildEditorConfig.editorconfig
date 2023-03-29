@@ -1,0 +1,3 @@
+is_global = true
+build_property.RootNamespace = Nest.IdentityServer
+build_property.ProjectDir = D:\Projects\Nest.Final\Nest.Microservice\IdentitServer\Nest.IdentityServer\
