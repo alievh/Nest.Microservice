@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yqzx7Jc3q5UXHqXMyEqKEzp22m+U6dwEouJLGMlDS7IWXCOxjk7ihxFCprHGrtI4JAWudBTNzFizGjSS+SgTxw==",
+  "dgSpecHash": "bzWKTgVTqRjP41AKMEkO20YqCfC9PogO1NsTMD4zyerIMlt/PsofJRrIBSZ7B34zalZ0U79sIqNCgDI7uJd3yw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Nest.Final\\Nest.Microservice\\Services\\Catalog\\Nest.Services.CatalogApi\\Nest.Services.CatalogApi.csproj",
   "expectedPackageFiles": [

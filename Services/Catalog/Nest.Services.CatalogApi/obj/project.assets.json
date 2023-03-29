@@ -388,6 +388,16 @@
         "runtime": {
           "lib/net6.0/ZstdSharp.dll": {}
         }
+      },
+      "Nest.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Nest.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Nest.Shared.dll": {}
+        }
       }
     }
   },
@@ -1190,12 +1200,18 @@
         "zstdsharp.port.0.6.2.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Nest.Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../Shared/Nest.Shared/Nest.Shared.csproj",
+      "msbuildProject": "../../../Shared/Nest.Shared/Nest.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "MongoDB.Driver >= 2.19.1",
+      "Nest.Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -1229,7 +1245,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Projects\\Nest.Final\\Nest.Microservice\\Shared\\Nest.Shared\\Nest.Shared.csproj": {
+              "projectPath": "D:\\Projects\\Nest.Final\\Nest.Microservice\\Shared\\Nest.Shared\\Nest.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
