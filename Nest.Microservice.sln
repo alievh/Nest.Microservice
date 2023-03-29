@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PictureStock", "PictureStoc
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.PictureStockApi", "Services\PictureStock\Nest.Services.PictureStockApi\Nest.Services.PictureStockApi.csproj", "{BE502C7A-A546-481C-B364-61EE743897CF}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{FA7DE35B-5A8C-41C8-8E81-F65DFE192853}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.BasketApi", "Services\Basket\Nest.Services.BasketApi\Nest.Services.BasketApi.csproj", "{713C67FF-0E5A-413E-86C9-91DA0A93196B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{BE502C7A-A546-481C-B364-61EE743897CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE502C7A-A546-481C-B364-61EE743897CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE502C7A-A546-481C-B364-61EE743897CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{713C67FF-0E5A-413E-86C9-91DA0A93196B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{713C67FF-0E5A-413E-86C9-91DA0A93196B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{713C67FF-0E5A-413E-86C9-91DA0A93196B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{713C67FF-0E5A-413E-86C9-91DA0A93196B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,8 @@ Global
 		{944A1B73-EE30-46E0-A06A-1139D12A5530} = {BC443029-DEA4-498A-B119-A5A25A79A85D}
 		{3BB137E8-DE5D-4C18-83A9-CFACEE7F5888} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
 		{BE502C7A-A546-481C-B364-61EE743897CF} = {3BB137E8-DE5D-4C18-83A9-CFACEE7F5888}
+		{FA7DE35B-5A8C-41C8-8E81-F65DFE192853} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
+		{713C67FF-0E5A-413E-86C9-91DA0A93196B} = {FA7DE35B-5A8C-41C8-8E81-F65DFE192853}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38F6871C-8B1E-4B69-B9C7-8991C4F3DBAD}

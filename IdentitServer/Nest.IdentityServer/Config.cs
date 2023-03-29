@@ -16,6 +16,7 @@ namespace Nest.IdentityServer
             {
                 new ApiResource("resource_catalog"){ Scopes = {"catalog_fullpermission"}},
                 new ApiResource("resource_picture_stock"){ Scopes = {"picture_stock_fullpermission"}},
+                new ApiResource("resource_basket"){ Scopes = {"basket_fullpermission"}},
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -31,7 +32,9 @@ namespace Nest.IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("picture_stock_fullpermission","Full access for Catalog API"),
+                new ApiScope("catalog_fullpermission","Full access for Catalog API"),
+                new ApiScope("picture_stock_fullpermission","Full access for PictureStock API"),
+                new ApiScope("basket_fullpermission","Full access for Basket API"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -58,6 +61,7 @@ namespace Nest.IdentityServer
                     ClientSecrets={new Secret("secret".Sha256())},
                     AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                     AllowedScopes={
+                        "basket_fullpermission",
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,

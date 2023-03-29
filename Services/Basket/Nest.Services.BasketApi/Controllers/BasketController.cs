@@ -35,5 +35,4 @@ public class BasketController : CustomBaseController
     [HttpDelete]
     public async Task<IActionResult> DeleteBasket()
         => CreateActionResultInstance(await _basketService.DeleteBasket(_identityService.GetUserId));
-
 }

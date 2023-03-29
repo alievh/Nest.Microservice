@@ -1,4 +1,6 @@
-﻿namespace Nest.Services.BasketApi.Services;
+﻿using StackExchange.Redis;
+
+namespace Nest.Services.BasketApi.Services;
 
 public class RedisService
 {
