@@ -1,0 +1,12 @@
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\bin\Debug\net7.0\Nest.Shared.deps.json
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\bin\Debug\net7.0\Nest.Shared.dll
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\bin\Debug\net7.0\Nest.Shared.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.csproj.AssemblyReference.cache
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.AssemblyInfoInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.AssemblyInfo.cs
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.csproj.CoreCompileInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.dll
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\refint\Nest.Shared.dll
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\Nest.Shared.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Shared\Nest.Shared\obj\Debug\net7.0\ref\Nest.Shared.dll

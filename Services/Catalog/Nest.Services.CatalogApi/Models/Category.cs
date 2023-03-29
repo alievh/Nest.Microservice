@@ -2,6 +2,4 @@
 
 namespace Nest.Services.CatalogApi.Models;
 
-public class Category : NameAuditiableEntity
-{
-}
+public class Category : NameAuditiableEntity { }
