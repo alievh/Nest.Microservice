@@ -15,7 +15,6 @@ public class PicturesController : CustomBaseController
         if (photos != null && photos.Count > 0)
         {
             PictureDto photoDto = new();
-
             foreach (var photo in photos)
             {
                 var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photos", photo.FileName);
@@ -24,9 +23,9 @@ public class PicturesController : CustomBaseController
                 await photo.CopyToAsync(stream, cancellationToken);
 
                 var returnPath = photo.FileName;
-
                 photoDto.Urls.Add(returnPath);
             }
+
 
             return CreateActionResultInstance(ResponseDto<PictureDto>.Success(photoDto, 200));
         }

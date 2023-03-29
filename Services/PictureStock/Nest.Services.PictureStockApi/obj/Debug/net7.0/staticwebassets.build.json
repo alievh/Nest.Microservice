@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "KOESWESS8E6WIC4yiOfr6n8rhTXOCPYm7JznY6fFKxE=",
+  "Source": "Nest.Services.PictureStockApi",
+  "BasePath": "_content/Nest.Services.PictureStockApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Nest.Services.PictureStockApi\\wwwroot",
+      "Source": "Nest.Services.PictureStockApi",
+      "ContentRoot": "D:\\Projects\\Nest.Final\\Nest.Microservice\\Services\\PictureStock\\Nest.Services.PictureStockApi\\wwwroot\\",
+      "BasePath": "_content/Nest.Services.PictureStockApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}

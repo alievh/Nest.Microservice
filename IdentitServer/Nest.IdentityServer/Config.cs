@@ -15,6 +15,7 @@ namespace Nest.IdentityServer
             new ApiResource[]
             {
                 new ApiResource("resource_catalog"){ Scopes = {"catalog_fullpermission"}},
+                new ApiResource("resource_picture_stock"){ Scopes = {"picture_stock_fullpermission"}},
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -30,7 +31,7 @@ namespace Nest.IdentityServer
         public static IEnumerable<ApiScope> ApiScopes =>
             new ApiScope[]
             {
-                new ApiScope("catalog_fullpermission","Full access for Catalog API"),
+                new ApiScope("picture_stock_fullpermission","Full access for Catalog API"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -45,6 +46,7 @@ namespace Nest.IdentityServer
                     AllowedGrantTypes=GrantTypes.ClientCredentials,
                     AllowedScopes={
                         "catalog_fullpermission",
+                        "picture_stock_fullpermission",
                         IdentityServerConstants.LocalApi.ScopeName
                     }
                 },
