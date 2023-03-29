@@ -51,3 +51,10 @@ D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogA
 D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\obj\Debug\net7.0\Nest.Services.CatalogApi.pdb
 D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\obj\Debug\net7.0\Nest.Services.CatalogApi.genruntimeconfig.cache
 D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\obj\Debug\net7.0\ref\Nest.Services.CatalogApi.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Catalog\Nest.Services.CatalogApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

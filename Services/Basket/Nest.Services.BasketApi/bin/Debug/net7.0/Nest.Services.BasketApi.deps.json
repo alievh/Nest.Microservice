@@ -12,8 +12,7 @@
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
           "Nest.Shared": "1.0.0",
           "StackExchange.Redis": "2.6.96",
-          "Swashbuckle.AspNetCore": "6.4.0",
-          "System.IdentityModel.Tokens.Jwt": "6.15.1"
+          "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
           "Nest.Services.BasketApi.dll": {}
