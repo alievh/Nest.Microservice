@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "L/+mo0sPSvAsYfCWtPFYKSLuP3V1LtIhOIpI09CJK4k=",
+  "Source": "Nest.Services.PaymentApi",
+  "BasePath": "_content/Nest.Services.PaymentApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

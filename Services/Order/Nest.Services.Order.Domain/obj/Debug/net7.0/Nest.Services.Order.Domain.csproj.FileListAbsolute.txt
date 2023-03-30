@@ -1,0 +1,15 @@
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\bin\Debug\net7.0\Nest.Services.Order.Domain.deps.json
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\bin\Debug\net7.0\Nest.Services.Order.Domain.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\bin\Debug\net7.0\Nest.Services.Order.Domain.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\bin\Debug\net7.0\Nest.Services.Order.Domain.Core.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\bin\Debug\net7.0\Nest.Services.Order.Domain.Core.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.csproj.AssemblyReference.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.AssemblyInfoInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.AssemblyInfo.cs
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.csproj.CoreCompileInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.csproj.CopyComplete
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\refint\Nest.Services.Order.Domain.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\Nest.Services.Order.Domain.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Domain\obj\Debug\net7.0\ref\Nest.Services.Order.Domain.dll

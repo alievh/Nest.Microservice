@@ -9,14 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{BDA745
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Catalog", "Catalog", "{22B88020-2218-41CE-9CDB-E32BE1EF21B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.CatalogApi", "Services\Catalog\Nest.Services.CatalogApi\Nest.Services.CatalogApi.csproj", "{EAB31A0F-98A0-4584-A36A-F16E2C8C0159}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.Services.CatalogApi", "Services\Catalog\Nest.Services.CatalogApi\Nest.Services.CatalogApi.csproj", "{EAB31A0F-98A0-4584-A36A-F16E2C8C0159}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B3D6247-6BBA-4F42-8DFF-FE01695E4D27}"
 	ProjectSection(SolutionItems) = preProject
 		Ports.txt = Ports.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Shared", "Shared\Nest.Shared\Nest.Shared.csproj", "{07699EA2-7D48-4FF2-861E-99023313C1B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.Shared", "Shared\Nest.Shared\Nest.Shared.csproj", "{07699EA2-7D48-4FF2-861E-99023313C1B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{BC443029-DEA4-498A-B119-A5A25A79A85D}"
 EndProject
@@ -24,15 +24,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.IdentityServer", "Iden
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PictureStock", "PictureStock", "{3BB137E8-DE5D-4C18-83A9-CFACEE7F5888}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.PictureStockApi", "Services\PictureStock\Nest.Services.PictureStockApi\Nest.Services.PictureStockApi.csproj", "{BE502C7A-A546-481C-B364-61EE743897CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.Services.PictureStockApi", "Services\PictureStock\Nest.Services.PictureStockApi\Nest.Services.PictureStockApi.csproj", "{BE502C7A-A546-481C-B364-61EE743897CF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Basket", "Basket", "{FA7DE35B-5A8C-41C8-8E81-F65DFE192853}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.BasketApi", "Services\Basket\Nest.Services.BasketApi\Nest.Services.BasketApi.csproj", "{713C67FF-0E5A-413E-86C9-91DA0A93196B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.Services.BasketApi", "Services\Basket\Nest.Services.BasketApi\Nest.Services.BasketApi.csproj", "{713C67FF-0E5A-413E-86C9-91DA0A93196B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{8766ED25-6A6D-4E78-94C3-457FDAC2B82C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.DiscountApi", "Services\Discount\Nest.Services.DiscountApi\Nest.Services.DiscountApi.csproj", "{C892A076-2E25-49E3-BBA3-1C18988F9C70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Nest.Services.DiscountApi", "Services\Discount\Nest.Services.DiscountApi\Nest.Services.DiscountApi.csproj", "{C892A076-2E25-49E3-BBA3-1C18988F9C70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Payment", "Payment", "{4165AE6B-18C9-443F-A7C2-D7B71181D964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.PaymentApi", "Services\Payment\Nest.Services.PaymentApi\Nest.Services.PaymentApi.csproj", "{5C28E9E4-4233-46CF-888D-32C69984A9D5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Order", "Order", "{12834890-DD98-48B4-A348-53983AB901C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.OrderApi", "Services\Order\Nest.Services.OrderApi\Nest.Services.OrderApi.csproj", "{946830FB-7B10-49C8-B613-F3BD164B4330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.Order.Application", "Services\Order\Nest.Services.Order.Application\Nest.Services.Order.Application.csproj", "{84285319-396A-48F9-8AF9-3E396918F4C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.Order.Domain", "Services\Order\Nest.Services.Order.Domain\Nest.Services.Order.Domain.csproj", "{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.Order.Domain.Core", "Services\Order\Nest.Services.Order.Domain.Core\Nest.Services.Order.Domain.Core.csproj", "{53707FF4-0577-4553-896C-A2A95D1206D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nest.Services.Order.Infrastructure", "Services\Order\Nest.Services.Order.Infrastructure\Nest.Services.Order.Infrastructure.csproj", "{776B9978-1BD7-44E9-AF98-0F5324652E33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -64,6 +80,30 @@ Global
 		{C892A076-2E25-49E3-BBA3-1C18988F9C70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C892A076-2E25-49E3-BBA3-1C18988F9C70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C892A076-2E25-49E3-BBA3-1C18988F9C70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C28E9E4-4233-46CF-888D-32C69984A9D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C28E9E4-4233-46CF-888D-32C69984A9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C28E9E4-4233-46CF-888D-32C69984A9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C28E9E4-4233-46CF-888D-32C69984A9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{946830FB-7B10-49C8-B613-F3BD164B4330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{946830FB-7B10-49C8-B613-F3BD164B4330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{946830FB-7B10-49C8-B613-F3BD164B4330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{946830FB-7B10-49C8-B613-F3BD164B4330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84285319-396A-48F9-8AF9-3E396918F4C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84285319-396A-48F9-8AF9-3E396918F4C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84285319-396A-48F9-8AF9-3E396918F4C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84285319-396A-48F9-8AF9-3E396918F4C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53707FF4-0577-4553-896C-A2A95D1206D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53707FF4-0577-4553-896C-A2A95D1206D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53707FF4-0577-4553-896C-A2A95D1206D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53707FF4-0577-4553-896C-A2A95D1206D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776B9978-1BD7-44E9-AF98-0F5324652E33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776B9978-1BD7-44E9-AF98-0F5324652E33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776B9978-1BD7-44E9-AF98-0F5324652E33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776B9978-1BD7-44E9-AF98-0F5324652E33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -79,6 +119,14 @@ Global
 		{713C67FF-0E5A-413E-86C9-91DA0A93196B} = {FA7DE35B-5A8C-41C8-8E81-F65DFE192853}
 		{8766ED25-6A6D-4E78-94C3-457FDAC2B82C} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
 		{C892A076-2E25-49E3-BBA3-1C18988F9C70} = {8766ED25-6A6D-4E78-94C3-457FDAC2B82C}
+		{4165AE6B-18C9-443F-A7C2-D7B71181D964} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
+		{5C28E9E4-4233-46CF-888D-32C69984A9D5} = {4165AE6B-18C9-443F-A7C2-D7B71181D964}
+		{12834890-DD98-48B4-A348-53983AB901C2} = {0E4B460D-56F1-43A3-B4C9-87D6F5779747}
+		{946830FB-7B10-49C8-B613-F3BD164B4330} = {12834890-DD98-48B4-A348-53983AB901C2}
+		{84285319-396A-48F9-8AF9-3E396918F4C2} = {12834890-DD98-48B4-A348-53983AB901C2}
+		{8FCE6CAE-9E0F-467F-9741-526E22BDD5FD} = {12834890-DD98-48B4-A348-53983AB901C2}
+		{53707FF4-0577-4553-896C-A2A95D1206D1} = {12834890-DD98-48B4-A348-53983AB901C2}
+		{776B9978-1BD7-44E9-AF98-0F5324652E33} = {12834890-DD98-48B4-A348-53983AB901C2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {38F6871C-8B1E-4B69-B9C7-8991C4F3DBAD}

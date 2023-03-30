@@ -1,3 +1,3 @@
-﻿namespace Nest.Services.Order.Infrastructure;
+﻿namespace Nest.Services.Order.Domain.Core;
 
 public interface IAggregateRoot { }

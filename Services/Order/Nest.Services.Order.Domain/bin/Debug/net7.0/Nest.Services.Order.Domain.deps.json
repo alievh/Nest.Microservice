@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Nest.Services.Order.Domain/1.0.0": {
+        "dependencies": {
+          "Nest.Services.Order.Domain.Core": "1.0.0"
+        },
+        "runtime": {
+          "Nest.Services.Order.Domain.dll": {}
+        }
+      },
+      "Nest.Services.Order.Domain.Core/1.0.0": {
+        "runtime": {
+          "Nest.Services.Order.Domain.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Nest.Services.Order.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Nest.Services.Order.Domain.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,12 @@
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Application.deps.json
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Application.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Application.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.csproj.AssemblyReference.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.AssemblyInfoInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.AssemblyInfo.cs
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.csproj.CoreCompileInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\refint\Nest.Services.Order.Application.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\ref\Nest.Services.Order.Application.dll
