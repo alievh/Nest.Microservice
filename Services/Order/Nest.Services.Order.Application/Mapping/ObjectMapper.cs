@@ -1,4 +1,6 @@
-﻿namespace Nest.Services.Order.Application.Mapping;
+﻿using AutoMapper;
+
+namespace Nest.Services.Order.Application.Mapping;
 
 public class ObjectMapper
 {

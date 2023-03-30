@@ -1,12 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "fkLhwLtBkg9Tp05SnFKrQOYSAopQjnL5SHyXGJkselXt7Nix3Ku+YFcyOuDZq+GxQXgj6nujbvfpYMtXpxuwBA==",
+  "dgSpecHash": "yIAp/cz7r+jPZhDpezOKL2nPfasgm7riwKMIFkBmgVvtLQaLLizPgmR1yFrYKfh3Lous0gewHJM99bGEqnx/cw==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Nest.Final\\Nest.Microservice\\Services\\Order\\Nest.Services.Order.Infrastructure\\Nest.Services.Order.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hsyna\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.1\\microsoft.data.sqlclient.5.0.1.nupkg.sha512",

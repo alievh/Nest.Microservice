@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "u+iGjtdOnZUwQg/r8hO2LCtrKoxXXJwGRJnSmPHm/FemY6EXZvEAGkAymvUwVQcH3MwHWyi+AOh7v+A5JymyYQ==",
+  "dgSpecHash": "hcqxlZ7PvbtLUE0y8obdg8fFekUZGRO9VzmGNCxKBhabTtr9Az33snvQ9YD37FNgOb4gqcqSAikijCHrOaBbPQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\Nest.Final\\Nest.Microservice\\Services\\Order\\Nest.Services.Order.Domain\\Nest.Services.Order.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr\\11.0.0\\mediatr.11.0.0.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\11.1.0\\mediatr.extensions.microsoft.dependencyinjection.11.1.0.nupkg.sha512",
+    "C:\\Users\\hsyna\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

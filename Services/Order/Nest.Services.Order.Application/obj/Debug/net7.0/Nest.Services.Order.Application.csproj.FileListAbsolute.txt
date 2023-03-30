@@ -10,3 +10,12 @@ D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Appl
 D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\refint\Nest.Services.Order.Application.dll
 D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.pdb
 D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\ref\Nest.Services.Order.Application.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Domain.Core.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Domain.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Shared.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Shared.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Domain.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Domain.Core.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\obj\Debug\net7.0\Nest.Services.Order.Application.csproj.CopyComplete
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Infrastructure.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Order\Nest.Services.Order.Application\bin\Debug\net7.0\Nest.Services.Order.Infrastructure.pdb
