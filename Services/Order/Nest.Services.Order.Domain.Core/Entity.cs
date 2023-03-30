@@ -1,4 +1,4 @@
-﻿namespace Nest.Services.Order.Infrastructure;
+﻿namespace Nest.Services.Order.Domain.Core;
 
 public abstract class Entity
 {
