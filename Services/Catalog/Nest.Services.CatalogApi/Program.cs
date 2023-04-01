@@ -39,6 +39,7 @@ builder.Services.AddSingleton<IDatabaseSettings>(sp =>
 
 // Dependency Injection
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ISubCategoryService, SubCategoryService>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
 var app = builder.Build();

@@ -26,10 +26,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 
 builder.Services.AddDbContext<OrderDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"), configure =>
-    {
-        configure.MigrationsAssembly("FreeCourse.Services.Order.Infrastructure");
-    });
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
 // Dependency Injection

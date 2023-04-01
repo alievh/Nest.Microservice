@@ -15,5 +15,9 @@ public class Product : NameAuditiableEntity
     public string UserId { get; set; } = null!;
     public List<string> Pictures { get; set; } = null!;
 
-    public List<SubCategory>? SubCategories { get; set; }
+    [BsonRepresentation(BsonType.ObjectId)]
+    public string SubCategoryId { get; set; } = null!;
+
+    [BsonIgnore]
+    public SubCategory? SubCategory { get; set; }
 }

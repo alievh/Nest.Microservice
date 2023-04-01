@@ -3,6 +3,8 @@ Services:
 	- Nest.Services.PictureStockApi => http://localhost:5012
 	- Nest.Services.BasketApi => http://localhost:5013
 	- Nest.Services.DiscountApi => http://localhost:5014
+	- Nest.Services.OrderApi => http://localhost:5015
+	- Nest.Services.PaymentApi => http://localhost:5016
 
 IdentityServer:
 	- Nest.IdentityServer => http://localhost:5001

@@ -4,7 +4,7 @@ namespace Nest.Services.CatalogApi.DTO_s.Product;
 
 public class ProductDto
 {
-    public string Id { get; set; } = null!;
+    public string? Id { get; set; }
 
     public string Name { get; set; } = null!;
     public string Description { get; set; } = null!;
@@ -16,5 +16,7 @@ public class ProductDto
 
     public DateTime CreatedTime { get; set; }
 
-    public List<SubCategoryDto>? SubCategories { get; set; }
+    public string SubCategoryId { get; set; } = null!;
+
+    public SubCategoryDto SubCategory { get; set; } = null!;
 }
