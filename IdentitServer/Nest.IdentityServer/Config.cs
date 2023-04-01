@@ -20,6 +20,7 @@ namespace Nest.IdentityServer
                 new ApiResource("resource_discount"){ Scopes = {"discount_fullpermission"}},
                 new ApiResource("resource_order"){ Scopes = {"order_fullpermission"}},
                 new ApiResource("resource_payment"){ Scopes = {"payment_fullpermission"}},
+                new ApiResource("resource_gateway"){ Scopes = {"gateway_fullpermission"}},
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -41,6 +42,7 @@ namespace Nest.IdentityServer
                 new ApiScope("discount_fullpermission","Full access for Discount API"),
                 new ApiScope("order_fullpermission","Full access for Order API"),
                 new ApiScope("payment_fullpermission","Full access for Payment API"),
+                new ApiScope("gateway_fullpermission","Full access for Gateway"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -56,6 +58,7 @@ namespace Nest.IdentityServer
                     AllowedScopes={
                         "catalog_fullpermission",
                         "picture_stock_fullpermission",
+                        "gateway_fullpermission",
                         IdentityServerConstants.LocalApi.ScopeName
                     }
                 },
@@ -69,8 +72,7 @@ namespace Nest.IdentityServer
                     AllowedScopes={
                         "basket_fullpermission",
                         "discount_fullpermission",
-                        "order_fullpermission",
-                        "payment_fullpermission",
+                        "gateway_fullpermission",
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile,
@@ -82,6 +84,14 @@ namespace Nest.IdentityServer
                     RefreshTokenExpiration=TokenExpiration.Absolute,
                     AbsoluteRefreshTokenLifetime= (int)(DateTime.Now.AddDays(60)- DateTime.Now).TotalSeconds,
                     RefreshTokenUsage=TokenUsage.ReUse
+                },
+                new Client()
+                {
+                    ClientName="Token Exchange Client",
+                    ClientId="TokenExhangeClient",
+                    ClientSecrets= {new Secret("secret".Sha256())},
+                    AllowedGrantTypes= new []{ "urn:ietf:params:oauth:grant-type:token-exchange" },
+                    AllowedScopes={ "discount_fullpermission", "payment_fullpermission", IdentityServerConstants.StandardScopes.OpenId }
                 }
             };
     }

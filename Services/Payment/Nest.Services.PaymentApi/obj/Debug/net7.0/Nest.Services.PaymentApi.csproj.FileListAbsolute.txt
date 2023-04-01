@@ -43,3 +43,13 @@ D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentA
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Nest.Shared.dll
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Nest.Shared.pdb
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Automatonymous.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\GreenPipes.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\MassTransit.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\MassTransit.AspNetCoreIntegration.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\NewId.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Newtonsoft.Json.Bson.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\RabbitMQ.Client.dll

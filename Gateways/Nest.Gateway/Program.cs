@@ -1,3 +1,4 @@
+using Nest.Gateway.DelegateHandler;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
 
