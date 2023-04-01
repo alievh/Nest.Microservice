@@ -8,3 +8,6 @@ Services:
 
 IdentityServer:
 	- Nest.IdentityServer => http://localhost:5001
+
+Gateways:
+	- Nest.Gateway => http://localhost:5000

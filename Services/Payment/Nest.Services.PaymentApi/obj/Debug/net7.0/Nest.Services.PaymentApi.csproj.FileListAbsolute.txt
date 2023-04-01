@@ -31,3 +31,15 @@ D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentA
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\obj\Debug\net7.0\Nest.Services.PaymentApi.pdb
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\obj\Debug\net7.0\Nest.Services.PaymentApi.genruntimeconfig.cache
 D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\obj\Debug\net7.0\ref\Nest.Services.PaymentApi.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Nest.Shared.dll
+D:\Projects\Nest.Final\Nest.Microservice\Services\Payment\Nest.Services.PaymentApi\bin\Debug\net7.0\Nest.Shared.pdb

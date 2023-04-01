@@ -1,0 +1,7 @@
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.csproj.AssemblyReference.cache
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.AssemblyInfoInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.AssemblyInfo.cs
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.csproj.CoreCompileInputs.cache
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\Nest.Final\Nest.Microservice\Gateways\Nest.Gateway\obj\Debug\net7.0\Nest.Gateway.MvcApplicationPartsAssemblyInfo.cache
