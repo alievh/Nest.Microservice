@@ -1,10 +1,12 @@
 ﻿using AutoMapper;
+using MassTransit;
 using MongoDB.Driver;
 using Nest.Services.CatalogApi.DTO_s.Product;
 using Nest.Services.CatalogApi.Models;
 using Nest.Services.CatalogApi.Services.Interfaces;
 using Nest.Services.CatalogApi.Settings;
 using Nest.Shared.DTO_s;
+using Nest.Shared.Messages;
 
 namespace Nest.Services.CatalogApi.Services.Implementations;
 
@@ -13,8 +15,9 @@ public class ProductService : IProductService
     private readonly IMongoCollection<Product> _productService;
     private readonly IMongoCollection<SubCategory> _subCategoryService;
     private readonly IMapper _mapper;
+    private readonly IPublishEndpoint _publishEndpoint;
 
-    public ProductService(IMapper mapper, IDatabaseSettings databaseSettings)
+    public ProductService(IMapper mapper, IDatabaseSettings databaseSettings, IPublishEndpoint publishEndpoint)
     {
         var client = new MongoClient(databaseSettings.ConnectionString);
         var database = client.GetDatabase(databaseSettings.DatabaseName);
@@ -22,6 +25,7 @@ public class ProductService : IProductService
         _productService = database.GetCollection<Product>(databaseSettings.CourseCollectionName);
         _subCategoryService = database.GetCollection<SubCategory>(databaseSettings.SubCategoryCollectionName);
         _mapper = mapper;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task<ResponseDto<List<ProductDto>>> GetAllAsync()
@@ -79,6 +83,12 @@ public class ProductService : IProductService
         var result = await _productService.FindOneAndReplaceAsync(c => c.Id == productUpdateDto.Id, updateProduct);
 
         if (result == null) return ResponseDto<NoContent>.Fail("Product not found", 404);
+
+        await _publishEndpoint.Publish(new ProductNameChangedEvent
+        {
+            CourseId = updateProduct.Id,
+            UpdatedName = updateProduct.Name,
+        });
 
         return ResponseDto<NoContent>.Success(204);
     }

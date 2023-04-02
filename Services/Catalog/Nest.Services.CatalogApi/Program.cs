@@ -1,3 +1,4 @@
+using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
@@ -9,6 +10,23 @@ using Nest.Services.CatalogApi.Settings;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+// MassTransit Configuration 
+builder.Services.AddMassTransit(x =>
+{
+
+    // Default Port: 5672
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration["RabbitMQUrl"], "/", host =>
+        {
+            host.Username("guest");
+            host.Password("guest");
+        });
+    });
+});
+
+builder.Services.AddMassTransitHostedService();
 
 // IdentityServer4 configuration
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
