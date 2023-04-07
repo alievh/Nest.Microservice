@@ -1,7 +1,9 @@
 ﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
 // Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
 
+using IdentityServer.Services;
 using IdentityServer4;
+using IdentityServer4.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -12,6 +14,8 @@ using Microsoft.Extensions.Hosting;
 using Nest.IdentityServer.Data;
 using Nest.IdentityServer.Models;
 using Nest.IdentityServer.Services;
+using System;
+using System.Threading.Tasks;
 
 namespace Nest.IdentityServer
 {
@@ -32,12 +36,14 @@ namespace Nest.IdentityServer
 
             services.AddControllersWithViews();
 
+
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
+            services.AddTransient<IProfileService, ProfileService>();
 
             var builder = services.AddIdentityServer(options =>
             {
@@ -57,6 +63,7 @@ namespace Nest.IdentityServer
 
 
             builder.AddResourceOwnerValidator<IdentityResourceOwnerPasswordValidator>();
+            builder.AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>();
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();
@@ -72,15 +79,36 @@ namespace Nest.IdentityServer
                     options.ClientId = "copy client ID from Google here";
                     options.ClientSecret = "copy client secret from Google here";
                 });
+
+            //JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
+
+            //services.AddAuthentication(options =>
+            //{
+            //    options.DefaultScheme = "Cookies";
+            //    options.DefaultChallengeScheme = "oidc";
+            //})
+            //.AddCookie("Cookies")
+            //.AddOpenIdConnect("oidc", options =>
+            //{
+
+            //    //Details omitted for simplicity
+
+            //    options.Scope.Add("roles"); //Add this
+            //    options.ClaimActions.MapJsonKey("role", "role", "role"); //And this
+            //    options.TokenValidationParameters.RoleClaimType = "role"; //And also this
+            //});
+
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, IServiceProvider services)
         {
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseDatabaseErrorPage();
             }
+
+            CreateRoles(services).Wait();
 
             app.UseStaticFiles();
 
@@ -92,6 +120,19 @@ namespace Nest.IdentityServer
             {
                 endpoints.MapDefaultControllerRoute();
             });
+        }
+
+        private async Task CreateRoles(IServiceProvider serviceProvider)
+        {
+            var RoleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+
+            bool adminRoleExists = await RoleManager.Roles.AnyAsync();
+
+            if (!adminRoleExists)
+            {
+                await RoleManager.CreateAsync(new IdentityRole("Vendor"));
+                await RoleManager.CreateAsync(new IdentityRole("User"));
+            }
         }
     }
 }

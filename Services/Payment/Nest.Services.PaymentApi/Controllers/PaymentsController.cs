@@ -38,7 +38,8 @@ public class PaymentsController : CustomBaseController
                 PictureUrl = x.PictureUrl,
                 Price = x.Price,
                 ProductId = x.ProductId,
-                ProductName = x.ProductName
+                ProductName = x.ProductName,
+                Quantity = x.Quantity
             });
         });
 

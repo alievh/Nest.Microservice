@@ -71,7 +71,7 @@ namespace Nest.IdentityServer
                     AllowedGrantTypes=GrantTypes.ResourceOwnerPassword,
                     AllowedScopes={
                         "basket_fullpermission",
-                        "discount_fullpermission",
+                        "order_fullpermission",
                         "gateway_fullpermission",
                         IdentityServerConstants.StandardScopes.Email,
                         IdentityServerConstants.StandardScopes.OpenId,
@@ -88,7 +88,7 @@ namespace Nest.IdentityServer
                 new Client()
                 {
                     ClientName="Token Exchange Client",
-                    ClientId="TokenExhangeClient",
+                    ClientId="TokenExchangeClient",
                     ClientSecrets= {new Secret("secret".Sha256())},
                     AllowedGrantTypes= new []{ "urn:ietf:params:oauth:grant-type:token-exchange" },
                     AllowedScopes={ "discount_fullpermission", "payment_fullpermission", IdentityServerConstants.StandardScopes.OpenId }

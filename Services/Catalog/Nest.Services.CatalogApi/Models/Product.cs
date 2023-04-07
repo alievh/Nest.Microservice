@@ -8,6 +8,7 @@ public class Product : NameAuditiableEntity
 {
     public string Description { get; set; } = null!;
     public int Stock { get; set; }
+    public int? Sold { get; set; }
 
     [BsonRepresentation(BsonType.Decimal128)]
     public decimal Price { get; set; }

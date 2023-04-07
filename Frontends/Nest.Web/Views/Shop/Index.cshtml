@@ -1,1 +1,133 @@
-﻿
+﻿@model ShopVM
+
+@{
+    int categoryCount = 0;
+}
+
+<div class="page-header mt-30 mb-50">
+            <div class="container">
+                <div class="archive-header">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3">
+                            <h1 class="mb-15">Snack</h1>
+                            <div class="breadcrumb">
+                                <a asp-controller="Home" asp-action="Index"><i class="fi-rs-home mr-5"></i>Home</a>
+                                <span></span> Shop <span></span> Snack
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mb-30">
+            <div class="row flex-row-reverse">
+                <div class="col-lg-4-5">
+                    <div class="shop-product-fillter">
+                        <div class="totall-product">
+                            <p>We found 
+                            @if(Model.Products != null && Model.Products.Count != 0)
+                            {
+                                <strong class="text-brand">@Model.Products.Count</strong>
+                            }
+                            else 
+                            {
+                                <strong class="text-brand">0</strong>
+                            }
+                        items for you!</p>
+                        </div>
+                    </div>
+                    <div class="row product-grid">
+                        @if(Model.Products != null && Model.Products.Count > 0)
+                        {
+                            @foreach (var product in Model.Products)
+                            {
+                                <div class="col-lg-1-5 col-md-4 col-12 col-sm-6">
+                                    <div class="product-cart-wrap mb-30">
+                                        <div class="product-img-action-wrap">
+                                            <div class="product-img product-img-zoom">
+                                                <a asp-controller="Shop" asp-action="Detail" asp-route-sunCategoryId="@product.Id">
+                                                    <img class="default-img" src="@product.StockPictureUrls[0]" alt="" />
+                                                    <img class="hover-img" src="@product.StockPictureUrls[1]" alt="" />
+                                                </a>
+                                            </div>
+                                            <div class="product-action-1">
+                                                <a aria-label="Add To Wishlist" class="action-btn" asp-controller="Wishlist" asp-action="AddWishlistItem" asp-route-id="@product.Id"><i class="fi-rs-heart"></i></a>
+                                            </div>
+                                            <div class="product-badges product-badges-position product-badges-mrg">
+                                        @if (product.Stock > 0)
+                                        {
+                                            <span class="new">
+                                                in stock
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="hot">
+                                                out stock
+                                            </span>
+                                        }
+                                            </div>
+                                        </div>
+                                        <div class="product-content-wrap">
+                                            <div class="product-category">
+                                                <a asp-controller="Shop" asp-action="Detail" asp-route-subCategoryId="@product.Id">@product.SubCategory.Name</a>
+                                            </div>
+                                            <h2><a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id">@product.Name</a></h2>
+                                            <div>
+                                                <span class="font-small text-muted">By <a href="vendor-details-1.html">NestFood</a></span>
+                                            </div>
+                                            <div class="product-card-bottom">
+                                                <div class="product-price">
+                                                <span>$@product.Price</span>
+                                                    @*<span class="old-price">$@product.Price</span>*@
+                                                </div>
+                                                <div class="add-cart">
+                                            <a class="add" asp-controller="Cart" asp-action="AddBasketItem" asp-route-id="@product.Id"><i class="fi-rs-shopping-cart mr-5"></i>Add </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--end product card-->
+                            }
+                        }
+                    </div>
+                </div>
+                <div class="col-lg-1-5 primary-sidebar sticky-sidebar">
+                    <div class="sidebar-widget widget-category-2 mb-30">
+                        <h5 class="section-title style-1 mb-30">Category</h5>
+                        <ul>
+                            @if(Model.SubCategories != null && Model.SubCategories.Any())
+                            {
+                                @foreach (var subCategory in Model.SubCategories)
+                                {
+                                    categoryCount++;
+                                    <li>
+                                        <a asp-controller="Shop" asp-action="Index" asp-route-subCategoryId="@subCategory.Id"> <img src="~/imgs/theme/icons/category-@(categoryCount).svg" alt="" />@subCategory.Name</a>
+                                    </li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <!-- Product sidebar Widget -->
+                    <div class="sidebar-widget product-sidebar mb-30 p-30 bg-grey border-radius-10">
+                        <h5 class="section-title style-1 mb-30">New products</h5>
+                        @if(Model.Products != null && Model.Products.Any())
+                        {
+                            @foreach (var product in Model.Products.OrderByDescending(x => x.CreatedTime).Take(3).ToList())
+                            {
+                                <div class="single-post clearfix">
+                                    <div class="image">
+                                        <img src="@product.StockPictureUrls[0]" alt="#" />
+                                    </div>
+                                    <div class="content pt-10">
+                                        <h5><a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id">@product.Name</a></h5>
+                                        <p class="price mb-0 mt-5">$@product.Price</p>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>

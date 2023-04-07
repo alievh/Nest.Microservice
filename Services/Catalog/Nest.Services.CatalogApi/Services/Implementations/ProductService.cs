@@ -67,6 +67,22 @@ public class ProductService : IProductService
         return ResponseDto<List<ProductDto>>.Success(_mapper.Map<List<ProductDto>>(products), 200);
     }
 
+
+    public async Task<ResponseDto<List<ProductDto>>> GetBySubCategoryAsync(string subCategoryId)
+    {
+        var products = await _productService.Find(c => c.SubCategoryId == subCategoryId).ToListAsync();
+        if (products.Any())
+        {
+            foreach (Product product in products)
+            {
+                product.SubCategory = await _subCategoryService.Find(c => c.Id == product.SubCategoryId).FirstAsync();
+            }
+        }
+        else products = new List<Product>();
+
+        return ResponseDto<List<ProductDto>>.Success(_mapper.Map<List<ProductDto>>(products), 200);
+    }
+
     public async Task<ResponseDto<ProductDto>> CreateAsync(ProductCreateDto productCreateDto)
     {
         var newProduct = _mapper.Map<Product>(productCreateDto);
@@ -99,4 +115,5 @@ public class ProductService : IProductService
         if (result.DeletedCount > 0) return ResponseDto<NoContent>.Success(204);
         else return ResponseDto<NoContent>.Fail("Product not found", 404);
     }
+
 }

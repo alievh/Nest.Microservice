@@ -37,7 +37,7 @@ public class TokenExchangeDelegateHandler : DelegatingHandler
             GrantType = _configuration["TokenGrantType"],
             SubjectToken = requestToken,
             SubjectTokenType = "urn:ietf:params:oauth:grant-type:access-token",
-            Scope = "payment_fullpermission discount_fullpermission"
+            Scope = "openid payment_fullpermission discount_fullpermission",
         };
 
         var tokenResponse = await _httpClient.RequestTokenExchangeTokenAsync(tokenExchangeTokenRequest);

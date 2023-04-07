@@ -38,6 +38,14 @@ public class ProductsController : CustomBaseController
         return CreateActionResultInstance(response);
     }
 
+    [HttpGet]
+    [Route("/api/[controller]/GetAllBySubCategory/{subCategoryId}")]
+    public async Task<IActionResult> GetAllBySubCategory(string subCategoryId)
+    {
+        var response = await _productService.GetBySubCategoryAsync(subCategoryId);
+        return CreateActionResultInstance(response);
+    }
+
     [HttpPost]
     public async Task<IActionResult> Create(ProductCreateDto productCreateDto)
     {

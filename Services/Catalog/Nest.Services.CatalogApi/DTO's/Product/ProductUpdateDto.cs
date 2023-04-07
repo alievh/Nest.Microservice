@@ -7,9 +7,12 @@ public class ProductUpdateDto
     public string Description { get; set; } = null!;
 
     public decimal Price { get; set; }
+    public int Stock { get; set; }
+    public int? Sold { get; set; }
 
     public string? UserId { get; set; }
-    public List<string> Picture { get; set; } = null!;
+    public List<string>? Pictures { get; set; }
 
-    public string CategoryId { get; set; } = null!;
+    public string SubCategoryId { get; set; }
+
 }

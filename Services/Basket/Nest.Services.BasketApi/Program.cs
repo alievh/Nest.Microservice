@@ -26,6 +26,7 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 // Dependency Injection
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<IBasketService, BasketService>();
+builder.Services.AddScoped<IWishlistService, WishlistService>();
 builder.Services.AddScoped<ISharedIdentityService, SharedIdentityService>();
 
 // Redis Configuration

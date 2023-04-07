@@ -24,7 +24,7 @@ public class CreateOrderCommandHandler : IRequestHandler<CreateOrderCommand, Res
 
         request.OrderItems.ForEach(x =>
         {
-            newOrder.AddOrderItem(x.ProductId, x.ProductName, (decimal)x.Price, x.PictureUrl);
+            newOrder.AddOrderItem(x.ProductId, x.ProductName, (decimal)x.Price, x.PictureUrl, x.Quantity);
         });
 
         await _context.Orders.AddAsync(newOrder);

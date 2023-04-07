@@ -26,12 +26,12 @@
           "Port": 5012
         }
       ],
-      "UpstreamPathTemplate": "/services/photostock/{everything}",
+      "UpstreamPathTemplate": "/services/picturestock/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamScheme": "http",
       "AuthenticationOptions": {
         "AuthenticationProviderKey": "GatewayAuthenticationScheme",
-        "AllowedScopes": [ "photo_stock_fullpermission" ]
+        "AllowedScopes": [ "picture_stock_fullpermission" ]
       }
     },
     {
@@ -94,7 +94,7 @@
           "Port": 5016
         }
       ],
-      "UpstreamPathTemplate": "/services/fakepayment/{everything}",
+      "UpstreamPathTemplate": "/services/payment/{everything}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
       "UpstreamScheme": "http",
       "DelegatingHandlers": [ "TokenExchangeDelegateHandler" ],

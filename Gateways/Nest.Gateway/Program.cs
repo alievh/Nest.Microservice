@@ -4,8 +4,9 @@ using Ocelot.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddHttpClient<TokenExchangeDelegateHandler>();
+builder.Configuration.AddJsonFile($"configuration.{builder.Environment.EnvironmentName.ToLower()}.json");
 
+builder.Services.AddHttpClient<TokenExchangeDelegateHandler>();
 builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
 {
     options.Authority = builder.Configuration["IdentityServerURL"];
@@ -15,13 +16,12 @@ builder.Services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme",
 
 builder.Services.AddOcelot().AddDelegatingHandler<TokenExchangeDelegateHandler>();
 
-builder.Host.ConfigureAppConfiguration((hostingContext, config) =>
-{
-    config.AddJsonFile($"configuration.{hostingContext.HostingEnvironment.EnvironmentName.ToLower()}.json").AddEnvironmentVariables();
-});
-
 var app = builder.Build();
 
+app.UseAuthentication();
+app.UseAuthorization();
+app.UseDeveloperExceptionPage();
+app.MapControllers();
 await app.UseOcelot();
 
 app.Run();

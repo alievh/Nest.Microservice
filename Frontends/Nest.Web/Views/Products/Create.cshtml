@@ -1,0 +1,83 @@
+﻿@model ProductCreateInput
+
+<div class="page-header breadcrumb-wrap">
+    <div class="container">
+        <div class="breadcrumb">
+            <a asp-controller="Home" asp-action="Index"><i class="fi-rs-home mr-5"></i>Home</a>
+            <span></span> Pages <span></span> My Account
+        </div>
+    </div>
+</div>
+<div class="page-content pt-150 pb-150">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 m-auto">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="dashboard-menu">
+                            <ul class="nav flex-column" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Products" asp-action="Index"><i class="fi-rs-settings-sliders mr-10"></i>Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" asp-controller="Products" asp-action="Create"><i class="fi-rs-user mr-10"></i>New Product</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+                        <div class="tab-content account dashboard-content pl-50">
+                            <div class="tab-pane fade active show" id="account-detail" role="tabpanel" aria-labelledby="account-detail-tab">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5>Create Product</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <form asp-controller="Products" asp-action="Create" method="post" enctype="multipart/form-data">
+                                                <div class="row">
+                                                    <div class="form-group col-md-12">
+                                                        <label asp-for="@Model.SubCategoryId"></label>
+                                                        <select asp-for="@Model.SubCategoryId" class="form-control" asp-items="@ViewBag.categoryList">
+                                                            <option value="">Select category</option>
+                                                        </select>
+                                                        <span class="text-danger" asp-validation-for="@Model.SubCategoryId"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label class="form-label" asp-for="@Model.Name"></label>
+                                                        <input asp-for="@Model.Name" class="form-control" />
+                                                        <span class="text-danger" asp-validation-for="@Model.Name"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label class="form-label" asp-for="@Model.Price"></label>
+                                                        <input asp-for="@Model.Price" class="form-control" />
+                                                        <span class="text-danger" asp-validation-for="@Model.Price"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label class="form-label" asp-for="@Model.Description"></label>
+                                                        <textarea asp-for="@Model.Description" class="form-control"></textarea>
+                                                        <span class="text-danger" asp-validation-for="@Model.Description"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label class="form-label" asp-for="@Model.Stock"></label>
+                                                        <input asp-for="@Model.Stock" class="form-control" />
+                                                        <span class="text-danger" asp-validation-for="@Model.Stock"></span>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label class="form-label" asp-for="@Model.PhotoFormFiles"></label>
+                                                        <input type="file" multiple="true" asp-for="@Model.PhotoFormFiles" class="form-control" />
+                                                    </div>
+                                                    <div class="col-md-12">
+                                                        <button type="submit" class="btn btn-fill-out submit font-weight-bold" name="submit" value="Submit">Save Change</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,16 +1,37 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Nest.Web.Services.Interfaces;
+using Nest.Web.ViewModels;
 
 namespace Nest.Web.Controllers;
 
 public class ShopController : Controller
 {
-    public IActionResult Index()
+    private readonly ICatalogService _catalogService;
+
+    public ShopController(ICatalogService catalogService)
     {
-        return View();
+        _catalogService = catalogService;
     }
 
-    public IActionResult Detail()
+    public async Task<IActionResult> Index(string subCategoryId)
     {
-        return View();
+        ShopVM shopVm = new();
+
+        if (subCategoryId == null)
+        {
+            shopVm.Products = await _catalogService.GetAllProductAsync();
+        }
+        else
+        {
+            shopVm.Products = await _catalogService.GetAllProductBySubCategoryAsync(subCategoryId);
+        }
+        shopVm.SubCategories = await _catalogService.GetAllSubCategoryAsync();
+
+        return View(shopVm);
+    }
+
+    public async Task<IActionResult> Detail(string id)
+    {
+        return View(await _catalogService.GetProductByIdAsync(id));
     }
 }

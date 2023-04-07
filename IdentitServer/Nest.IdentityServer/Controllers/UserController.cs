@@ -39,6 +39,15 @@ namespace Nest.IdentityServer.Controllers
                 return BadRequest(ResponseDto<NoContent>.Fail(result.Errors.Select(x => x.Description).ToList(), 400));
             };
 
+            if (signUpDto.Role == "vendor")
+            {
+                await _userManager.AddToRoleAsync(user, "Vendor");
+            }
+            else if (signUpDto.Role == "user")
+            {
+                await _userManager.AddToRoleAsync(user, "User");
+            }
+
             return NoContent();
         }
 
@@ -57,6 +66,13 @@ namespace Nest.IdentityServer.Controllers
                 user.UserName,
                 user.Email
             });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetVendors()
+        {
+            var vendors = await _userManager.GetUsersInRoleAsync("Vendor");
+            return Ok(vendors.ToList());
         }
     }
 }

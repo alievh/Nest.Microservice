@@ -22,17 +22,17 @@ public class Order : Entity, IAggregateRoot
         BuyerId = buyerId;
     }
 
-    public void AddOrderItem(string productId, string productName, decimal price, string pictureUrl)
+    public void AddOrderItem(string productId, string productName, decimal price, string pictureUrl, int quantity)
     {
         var existProduct = _orderItems.Any(x => x.ProductId == productId);
 
         if (!existProduct)
         {
-            var newOrderItem = new OrderItem(productId, productName, pictureUrl, price);
+            var newOrderItem = new OrderItem(productId, productName, pictureUrl, price, quantity);
 
             _orderItems.Add(newOrderItem);
         }
     }
 
-    public decimal GetTotalPrice => _orderItems.Sum(x => x.Price);
+    public decimal GetTotalPrice => _orderItems.Sum(x => x.Price * x.Quantity);
 }
